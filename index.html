@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Planner</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <h1 class="header-title">Канбан-доска</h1>
+    </div>
+</div>
+
+<main class="main">
+    <div class="container">
+        <div class="task">
+            <div class="task-wrapper">
+                <h3 class="task-title">Новая задача</h3>
+                <input type="text" class="add-text" placeholder="Название задачи...">
+                <button class="btn-text">+ Добавить</button>
+                <span id="error">Поле не должно быть пустым</span>
+            </div>
+        </div>
+
+        <section class="row">
+            <div class="row-list list">
+                <h4 class="row-list-title">Список</h4>
+                <ul class="row-list-container" id="list">
+                    <li class="item list-border">Название первой задачи</li>
+                    <li class="item list-border">Длинное название второй задачи</li>
+                    <li class="item list-border">Название третьей задачи</li>
+                </ul>
+            </div>
+
+            <div class="row-list process">
+                <h4 class="row-list-title">В процессе</h4>
+                <ul class="row-list-container" id="process">
+                    <li class="item process-border">Название четвертой задачи</li>
+                    <li class="item process-border">Очень очень очень очень длинное название пятой задачи</li>
+                    <li class="item process-border">Название шестой задачи</li>
+                    <li class="item process-border">Длинное название седьмой задачи</li>
+                    <li class="item process-border">Название восьмой задачи</li>
+                </ul>
+            </div>
+
+            <div class="row-list done">
+                <h4 class="row-list-title">Готово</h4>
+                <ul class="row-list-container" id="done">
+                    <li class="item done-border">Очень очень очень очень длинное название девятой задачи</li>
+                    <li class="item done-border">Название десятой задачи</li>
+                    <li class="item done-border">Название одиннадцатой задачи</li>
+                </ul>
+            </div>
+
+            <div class="row-list cart">
+                <h4 class="row-list-title">Корзина</h4>
+                <ul class="row-list-container" id="cart">
+                    <li class="item cart-border">Название двенадцатой задачи</li>
+                    <li class="item cart-border">Очень очень очень очень длинное название тринадцатой задачи</li>
+                    <li class="item cart-border">Название четырнадцатой задачи</li>
+                </ul>
+                <button class="clear-btn">Очистить</button>
+            </div>
+        </section>
+
+
+    </div>
+
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
